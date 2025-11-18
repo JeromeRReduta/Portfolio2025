@@ -4,14 +4,14 @@ import "../design/about-me.css";
 
 export default function AboutMe(): JSX.Element {
     return (
-        <>
+        <section id="about-me">
             <AboutMeHeading
                 randomMessage={"SUPPOSED TO REMOVE THIS PLACEHOLDER"}
             />
             {/*TODO - literally make a thing that changes random message every 15 seconds*/}
             <PicOfMe />
             <Intro />
-        </>
+        </section>
     );
 }
 
