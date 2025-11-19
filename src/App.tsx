@@ -1,7 +1,7 @@
 import "./shared/design/base.css";
 import { Routes, Route } from "react-router";
-import PortfolioPage from "./portfolio-page/components/PortfolioPage.tsx";
 import BaseLayout from "./shared/components/BaseLayout.tsx";
+import AboutMePage from "./about-me/components/AboutMePage.tsx";
 
 function App() {
     /**
@@ -13,7 +13,7 @@ function App() {
     return (
         <Routes>
             <Route path="/" element={<BaseLayout />}>
-                <Route index element={<PortfolioPage />} />
+                <Route index element={<AboutMePage />} />
             </Route>
             {/* <Route path="/projects">
         <Route path=":id" element={} />

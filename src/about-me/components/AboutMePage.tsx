@@ -2,7 +2,7 @@ import type { JSX } from "react";
 import "../../shared/design/base.css";
 import "../design/about-me.css";
 
-export default function AboutMe(): JSX.Element {
+export default function AboutMePage(): JSX.Element {
     return (
         <section id="about-me">
             <AboutMeHeading
