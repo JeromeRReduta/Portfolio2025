@@ -151,15 +151,16 @@ html {
 }
 
 #root {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: var(--base);
     display: grid;
     grid-template-areas:
         "header    header    header"
         ".         main      .";
-    grid-template-rows: 20vh 80vh;
+    grid-template-rows: 2fr 8fr;
     grid-template-columns: 1fr 6fr 1fr;
+    fill: currentColor;
 }
 
 #root * {
@@ -181,4 +182,14 @@ div {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+a {
+    color: var(--dark);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent);
 }

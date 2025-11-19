@@ -8,18 +8,55 @@
 
 header {
     display: flex;
+    width: 100%;
 }
 
 .local-links {
-    flex: 1 0 calc(50vw - 1.5rem);
+    flex: 80 0 80%;
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .offsite-links {
-    flex: 1 0 calc(50vw - 1.5rem);
+    flex: 20 0 20%;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
+}
+
+.offsite-links > * {
+    padding: 1.5rem;
+}
+
+.svg-link {
+    color: var(--dark);
+    height: 5rem;
+    width: 5rem;
+}
+
+.svg-base {
+    fill: currentColor;
+}
+
+.svg-transparent {
+    fill: var(--secondary);
+}
+
+.svg-link > svg {
+    height: 100%;
+    width: 100%;
+}
+
+.offsite-links > * > * {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.svg-link:hover {
+    color: var(--accent);
+}
+
+.svg-link > svg > path {
+    fill: currentColor;
 }
