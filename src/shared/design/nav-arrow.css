@@ -1,11 +1,3 @@
-.nav-arrow,
-.nav-arrow > * {
-    margin: 0;
-    padding: 0;
-    height: 100px;
-    width: 100px;
-}
-
 .right-arrow {
     rotate: 0deg;
 }
@@ -20,4 +12,8 @@
 
 .up-arrow {
     rotate: 270deg;
+}
+
+.nav-arrow-message {
+    font-size: 1.5rem;
 }

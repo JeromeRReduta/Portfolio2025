@@ -9,11 +9,13 @@ type Direction = "UP" | "RIGHT" | "DOWN" | "LEFT";
 interface NavArrowProps {
     readonly direction: Direction;
     readonly url: string;
+    readonly message: string | null;
 }
 
 export default function NavArrow({
     direction,
     url,
+    message,
 }: NavArrowProps): JSX.Element {
     let className: string;
     switch (direction) {
@@ -34,7 +36,8 @@ export default function NavArrow({
     }
     return (
         <Link to={url}>
-            <ArrowSvg className={`nav-arrow ${className}`} />
+            {message ?? <div className="nav-arrow-message">{message}</div>}
+            <ArrowSvg className={`svg-link ${className}`} />
         </Link>
     );
 }
