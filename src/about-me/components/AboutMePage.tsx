@@ -1,6 +1,7 @@
 import type { JSX } from "react";
 import "../../shared/design/base.css";
 import "../design/about-me.css";
+import NavArrow from "../../shared/components/NavArrow";
 
 export default function AboutMePage(): JSX.Element {
     return (
@@ -11,6 +12,7 @@ export default function AboutMePage(): JSX.Element {
             {/*TODO - literally make a thing that changes random message every 15 seconds*/}
             <PicOfMe />
             <Intro />
+            <NavArrow direction={"DOWN"} url={"/projects"} />
         </section>
     );
 }

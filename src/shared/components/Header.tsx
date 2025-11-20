@@ -5,8 +5,6 @@ import "../../shared/design/header.css";
 import GithubSVG from "../../assets/github-mark.svg?react";
 import LinkedInSVG from "../../assets/LinkedIn_icon.svg?react";
 
-// /mnt/c/Users/JRRed/OneDrive/Desktop/Portfolio2025/src/assets/icons8-github-30.svg"
-
 const svgLinkSideLength: number = 500;
 
 export default function Header() {
