@@ -25,10 +25,6 @@ header {
     align-items: center;
 }
 
-.offsite-links > * {
-    padding: 1.5rem;
-}
-
 .svg-link {
     color: var(--dark);
     height: 6rem;
@@ -46,9 +42,6 @@ header {
 .svg-link > svg {
     height: 100%;
     width: 100%;
-}
-
-.offsite-links > * > * {
     padding: 0 !important;
     margin: 0 !important;
 }

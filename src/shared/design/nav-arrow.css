@@ -1,0 +1,23 @@
+.nav-arrow,
+.nav-arrow > * {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    width: 100px;
+}
+
+.right-arrow {
+    rotate: 0deg;
+}
+
+.down-arrow {
+    rotate: 90deg;
+}
+
+.left-arrow {
+    rotate: 180deg;
+}
+
+.up-arrow {
+    rotate: 270deg;
+}

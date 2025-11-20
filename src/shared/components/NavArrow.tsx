@@ -1,6 +1,8 @@
 import type { JSX } from "react";
 import ArrowSvg from "../../assets/right-arrow.svg?react";
 import { Link } from "react-router";
+import "../design/base.css";
+import "../design/nav-arrow.css";
 
 type Direction = "UP" | "RIGHT" | "DOWN" | "LEFT";
 
@@ -32,7 +34,7 @@ export default function NavArrow({
     }
     return (
         <Link to={url}>
-            <ArrowSvg className={className} />
+            <ArrowSvg className={`nav-arrow ${className}`} />
         </Link>
     );
 }

@@ -12,7 +12,7 @@ export default function AboutMePage(): JSX.Element {
             {/*TODO - literally make a thing that changes random message every 15 seconds*/}
             <PicOfMe />
             <Intro />
-            <NavArrow direction={"DOWN"} url={"/projects"} />
+            <NavArrow direction={"UP"} url={"/projects"} />
         </section>
     );
 }
