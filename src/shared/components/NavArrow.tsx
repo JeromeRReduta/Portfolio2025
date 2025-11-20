@@ -9,7 +9,7 @@ type Direction = "UP" | "RIGHT" | "DOWN" | "LEFT";
 interface NavArrowProps {
     readonly direction: Direction;
     readonly url: string;
-    readonly message: string | null;
+    readonly message?: string;
 }
 
 export default function NavArrow({
@@ -35,9 +35,9 @@ export default function NavArrow({
             throw new Error("this is literally never supposed to run");
     }
     return (
-        <Link to={url}>
-            {message ?? <div className="nav-arrow-message">{message}</div>}
-            <ArrowSvg className={`svg-link ${className}`} />
+        <Link className="nav-arrow-container" to={url}>
+            {!!message && <div className="nav-arrow-message">{message}</div>}
+            <ArrowSvg className={`svg-link nav-arrow ${className}`} />
         </Link>
     );
 }
