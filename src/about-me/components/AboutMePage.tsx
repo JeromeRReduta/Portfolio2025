@@ -2,14 +2,13 @@ import type { JSX } from "react";
 import "../../shared/design/base.css";
 import "../design/about-me.css";
 import NavArrow from "../../shared/components/NavArrow";
+import useRandomMessage from "../stores/UseRandomMessage";
 
 export default function AboutMePage(): JSX.Element {
+    const { message } = useRandomMessage();
     return (
         <section id="about-me">
-            <AboutMeHeading
-                randomMessage={"SUPPOSED TO REMOVE THIS PLACEHOLDER"}
-            />
-            {/*TODO - literally make a thing that changes random message every 15 seconds*/}
+            <AboutMeHeading randomMessage={message} />
             <PicOfMe />
             <Intro />
             <NavArrow direction="DOWN" url="/projects" message="PROJECTS" />
