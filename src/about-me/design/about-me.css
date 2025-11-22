@@ -1,1 +1,31 @@
 /* TODO */
+#about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about-me-heading {
+    flex: 15 1 15%;
+}
+
+.greeting {
+    flex: 60 1 60%;
+    justify-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pic-of-me {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.nav-arrow-container {
+    flex: 15 1 15%;
+}

@@ -86,7 +86,6 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
@@ -142,6 +141,11 @@ html {
 }
 
 /* Base stuff */
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
 :root {
     --base: #f2fbe0;
     --secondary: #bcb6ff;
@@ -158,18 +162,28 @@ html {
     grid-template-areas:
         "header    header    header"
         ".         main      .";
-    grid-template-rows: 2fr 8fr;
-    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 15fr 85fr;
+    grid-template-columns: 125fr 750fr 125fr;
     fill: currentColor;
 }
 
-#root * {
-    padding: 1.5rem;
+body {
+    margin: 0rem;
+}
+
+* + * {
+    /** forbidden technique: lobotomized owl selector */
+    margin: 1.5rem 0 0 0;
 }
 
 header {
+    margin-top: 0;
     grid-area: header;
     background-color: var(--secondary);
+}
+
+header * {
+    margin: 1.5rem;
 }
 
 main {
@@ -182,11 +196,12 @@ div {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    font-size: 1.5rem;
 }
 
 a {
     color: var(--dark);
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-decoration: none;
 }
 
@@ -209,6 +224,10 @@ a:hover {
     fill: var(--secondary);
 }
 
+.svg-link {
+    padding: 1.5rem;
+    margin: 0rem;
+}
 .svg-link > svg {
     height: 100%;
     width: 100%;

@@ -12,14 +12,14 @@ header {
 }
 
 .local-links {
-    flex: 80 0 80%;
+    flex: 80 1 80%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 .offsite-links {
-    flex: 20 0 20%;
+    flex: 20 1 20%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
