@@ -2,6 +2,7 @@ import "./shared/design/base.css";
 import { Routes, Route } from "react-router";
 import BaseLayout from "./shared/components/BaseLayout.tsx";
 import AboutMePage from "./about-me/components/AboutMePage.tsx";
+import ContactMePage from "./contact-me/components/ContactMePage.tsx";
 
 function App() {
     /**
@@ -14,6 +15,10 @@ function App() {
         <Routes>
             <Route path="/" element={<BaseLayout />}>
                 <Route index element={<AboutMePage />} />
+            </Route>
+
+            <Route path="/contact-me" element={<BaseLayout />}>
+                <Route index element={<ContactMePage />} />
             </Route>
             {/* <Route path="/projects">
         <Route path=":id" element={} />

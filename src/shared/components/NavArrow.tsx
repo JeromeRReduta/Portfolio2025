@@ -37,7 +37,7 @@ export default function NavArrow({
     return (
         <Link className="nav-arrow-container" to={url}>
             {!!message && <div className="nav-arrow-message">{message}</div>}
-            <ArrowSvg className={`svg-link nav-arrow ${className}`} />
+            <ArrowSvg className={`nav-arrow ${className}`} />
         </Link>
     );
 }
