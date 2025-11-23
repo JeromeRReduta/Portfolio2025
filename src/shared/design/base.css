@@ -209,17 +209,30 @@ a:hover {
     color: var(--accent);
 }
 
+.svg-link {
+    height: 6rem;
+    width: 6rem;
+}
+
 /** svg stuff */
 .svg-link {
     color: var(--dark);
-    height: 6rem;
-    width: 6rem;
+
     padding: 1.5rem;
     margin: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .svg-link:hover {
     color: var(--accent);
+}
+
+.svg-link svg {
+    height: 6rem;
+    width: 6rem;
 }
 
 .svg-link svg,
@@ -227,8 +240,6 @@ a:hover {
 .svg-link_path_clear {
     padding: 0 !important;
     margin: 0 !important;
-    width: 100%;
-    height: 100%;
 }
 
 .svg-link_path_base {
@@ -237,4 +248,8 @@ a:hover {
 
 .svg-link_path_clear {
     fill: var(--secondary);
+}
+
+.svg-link_message {
+    color: inherit;
 }
