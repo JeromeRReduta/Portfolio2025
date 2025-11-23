@@ -214,31 +214,27 @@ a:hover {
     color: var(--dark);
     height: 6rem;
     width: 6rem;
-}
-
-.svg-base {
-    fill: currentColor;
-}
-
-.svg-transparent {
-    fill: var(--secondary);
-}
-
-.svg-link {
     padding: 1.5rem;
     margin: 0rem;
-}
-.svg-link > svg {
-    height: 100%;
-    width: 100%;
-    padding: 0 !important;
-    margin: 0 !important;
 }
 
 .svg-link:hover {
     color: var(--accent);
 }
 
-.svg-link > svg > path {
+.svg-link svg,
+.svg-link_path_base,
+.svg-link_path_clear {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    height: 100%;
+}
+
+.svg-link_path_base {
     fill: currentColor;
+}
+
+.svg-link_path_clear {
+    fill: var(--secondary);
 }
