@@ -1,4 +1,4 @@
-import AboutMePage from "../../about-me/components/AboutMePage.tsx";
+import AboutMePage from "../../welcome/components/WelcomePage.tsx";
 import "../../shared/design/base.css";
 
 export default function PortfolioPage() {

@@ -1,22 +1,22 @@
 import type { JSX } from "react";
 import "../../shared/design/base.css";
-import "../design/about-me.css";
+import "../design/Welcome.css";
 import NavArrow from "../../shared/components/NavArrow";
 import useRandomMessage from "../stores/UseRandomMessage";
 import navArrowStyles from "../../shared/design/Nav-Arrow.module.css";
 
-export default function AboutMePage(): JSX.Element {
+export default function WelcomePage(): JSX.Element {
     const { message } = useRandomMessage();
     return (
         <section id="about-me">
-            <AboutMeHeading randomMessage={message} />
+            <WelcomeHeading randomMessage={message} />
             <Greeting />
             <NavArrow direction="DOWN" url="/projects" message="PROJECTS" />
         </section>
     );
 }
 
-function AboutMeHeading({
+function WelcomeHeading({
     randomMessage,
 }: {
     randomMessage: string;
