@@ -3,6 +3,7 @@ import "../../shared/design/base.css";
 import "../design/about-me.css";
 import NavArrow from "../../shared/components/NavArrow";
 import useRandomMessage from "../stores/UseRandomMessage";
+import navArrowStyles from "../../shared/design/Nav-Arrow.module.css";
 
 export default function AboutMePage(): JSX.Element {
     const { message } = useRandomMessage();

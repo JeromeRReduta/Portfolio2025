@@ -1,6 +1,11 @@
 #nav-arrow {
     width: 7.5rem;
     height: 7.5rem;
+    flex: 15 1 15%;
+}
+
+#nav-arrow_flexy {
+    flex: 15 1 15%;
 }
 
 .right-arrow {

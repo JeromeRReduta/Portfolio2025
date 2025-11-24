@@ -177,7 +177,6 @@ body {
 }
 
 header {
-    margin-top: 0;
     grid-area: header;
     background-color: var(--secondary);
 }
@@ -188,6 +187,15 @@ header * {
 
 main {
     grid-area: main;
+    margin: 0;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 p,

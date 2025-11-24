@@ -11,6 +11,11 @@
     align-items: center;
 }
 
+.header_local_link {
+    width: auto;
+    height: auto;
+}
+
 .header_offsite {
     flex: 20 1 20%;
     display: flex;

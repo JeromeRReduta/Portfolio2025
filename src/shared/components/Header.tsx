@@ -15,11 +15,18 @@ export default function Header() {
 }
 
 function LocalLinks(): JSX.Element {
+    console.log(styles.header_local_link);
     return (
         <nav className={styles.header_local}>
-            <Link to="#">Welcome</Link>
-            <Link to="#">Projects</Link>
-            <Link to="#">Contact Me</Link>
+            <Link className={styles.header_local_link} to="#">
+                Welcome
+            </Link>
+            <Link className={styles.header_local_link} to="#">
+                Projects
+            </Link>
+            <Link className={styles.header_local_link} to="#">
+                Contact Me
+            </Link>
         </nav>
     );
 }
