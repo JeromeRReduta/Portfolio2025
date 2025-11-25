@@ -25,7 +25,12 @@
 .header__local_link {
 }
 
-.header__offsite_link {
+.github_svg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.linkedin_svg {
     width: 3rem;
     height: 3rem;
 }

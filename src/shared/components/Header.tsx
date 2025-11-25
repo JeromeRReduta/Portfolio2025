@@ -33,17 +33,11 @@ function LocalLinks(): JSX.Element {
 function OffsiteLinks(): JSX.Element {
     return (
         <nav className={styles["header__offsite"]}>
-            <Link
-                className={styles["header__offsite_link"]}
-                to="https://github.com/jeromeRReduta/"
-            >
-                <GithubSVG />
+            <Link to="https://github.com/jeromeRReduta/">
+                <GithubSVG className={styles["github_svg"]} />
             </Link>
-            <Link
-                className={styles["header__offsite_link"]}
-                to="https://www.linkedin.com/in/jeromerreduta/"
-            >
-                <LinkedInSVG />
+            <Link to="https://www.linkedin.com/in/jeromerreduta/">
+                <LinkedInSVG className={styles["linkedin_svg"]} />
             </Link>
         </nav>
     );

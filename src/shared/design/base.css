@@ -196,3 +196,18 @@ a {
 a:hover {
     color: var(--accent);
 }
+
+/** svg/path formatting */
+.path__base,
+.path__secondary {
+    /* padding: 0 !important;
+    margin: 0 !important; */
+}
+
+.path__base {
+    fill: currentColor;
+}
+
+.path__secondary {
+    fill: var(--secondary);
+}
