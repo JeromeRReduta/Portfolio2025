@@ -86,6 +86,7 @@ time,
 mark,
 audio,
 video {
+    margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
@@ -128,7 +129,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
 /* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -143,9 +143,15 @@ html {
 /* Base stuff */
 
 body {
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
 }
+
+#root {
+    width: 100%vw;
+    height: 100%;
+}
+
 :root {
     --base: #f2fbe0;
     --secondary: #bcb6ff;
@@ -155,47 +161,34 @@ body {
 }
 
 #root {
-    width: 100vw;
-    height: 100vh;
     background-color: var(--base);
     display: grid;
     grid-template-areas:
         "header    header    header"
         ".         main      .";
-    grid-template-rows: 15fr 85fr;
+    grid-template-rows: min-content 1fr;
     grid-template-columns: 125fr 750fr 125fr;
     fill: currentColor;
-}
-
-body {
-    margin: 0rem;
-}
-
-* + * {
-    /** forbidden technique: lobotomized owl selector */
-    margin: 1.5rem 0 0 0;
+    row-gap: 2rem;
 }
 
 header {
     grid-area: header;
     background-color: var(--secondary);
-}
-
-header * {
-    margin: 1.5rem;
+    width: 100%;
 }
 
 main {
     grid-area: main;
-    margin: 0;
 }
+
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 p,
@@ -204,7 +197,7 @@ div {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 a {
@@ -218,16 +211,16 @@ a:hover {
 }
 
 .svg-link {
-    height: 6rem;
-    width: 6rem;
+    height: 3rem;
+    width: 3rem;
 }
 
 /** svg stuff */
 .svg-link {
     color: var(--dark);
 
-    padding: 1.5rem;
-    margin: 0rem;
+    /* padding: 1.5rem;
+    margin: 0rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;

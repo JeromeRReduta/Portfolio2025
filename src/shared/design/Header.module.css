@@ -2,13 +2,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* padding: 1rem; */
+}
+
+.header_local,
+.header_offsite {
+    display: flex;
+    align-items: center;
+    /* gap: 1.5rem; */
 }
 
 .header_local {
     flex: 80 1 80%;
-    display: flex;
     justify-content: flex-start;
-    align-items: center;
 }
 
 .header_local_link {
@@ -18,7 +24,5 @@
 
 .header_offsite {
     flex: 20 1 20%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: flex-end;
 }

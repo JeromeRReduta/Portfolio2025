@@ -2,7 +2,7 @@ import { useEffect, useEffectEvent, useState, type JSX } from "react";
 import type Project from "../entities/Project.ts";
 import type { ContextStatus } from "../../shared/entities/ContextStatus.ts";
 import type { ProjectContextValues } from "./ProjectContextValues.ts";
-import { ProjectContext } from "./ProjectContext.ts";
+import { ProjectContext } from "./ProjectContext.tsx";
 
 function mockProjects(): Project[] {
     return [
