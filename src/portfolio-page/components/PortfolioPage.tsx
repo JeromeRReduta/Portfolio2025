@@ -1,5 +1,5 @@
 import AboutMePage from "../../welcome/components/WelcomePage.tsx";
-import "../../shared/design/base.css";
+// import "../../shared/design/base.css"; // TODO
 
 export default function PortfolioPage() {
     /**

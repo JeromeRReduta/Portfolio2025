@@ -1,9 +1,9 @@
 import type { JSX } from "react";
 import "../../shared/design/base.css";
-import "../design/Welcome.css";
-import NavArrow from "../../shared/components/NavArrow";
+// import "../design/Welcome.css";
+// import NavArrow from "../../shared/components/NavArrow";
 import useRandomMessage from "../stores/UseRandomMessage";
-import navArrowStyles from "../../shared/design/Nav-Arrow.module.css";
+// import navArrowStyles from "../../shared/design/Nav-Arrow.module.css"; // TODO
 
 export default function WelcomePage(): JSX.Element {
     const { message } = useRandomMessage();
@@ -11,7 +11,7 @@ export default function WelcomePage(): JSX.Element {
         <section id="about-me">
             <WelcomeHeading randomMessage={message} />
             <Greeting />
-            <NavArrow direction="DOWN" url="/projects" message="PROJECTS" />
+            {/* <NavArrow direction="DOWN" url="/projects" message="PROJECTS" /> */}
         </section>
     );
 }

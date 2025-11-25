@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 import type Project from "../entities/Project.ts";
-import styles from "../design/ProjectCard.module.css";
+// import styles from "../design/ProjectCard.module.css"; // TODO
 
 export default function ProjectCard({
     project,
