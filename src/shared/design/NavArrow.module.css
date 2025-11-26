@@ -39,13 +39,16 @@
     composes: base__nav_arrow_svg;
     rotate: -90deg;
 }
+
 .nav_arrow__svg_right {
     composes: base__nav_arrow_svg;
 }
+
 .nav_arrow__svg_down {
     composes: base__nav_arrow_svg;
     rotate: 90deg;
 }
+
 .nav_arrow__svg_left {
     composes: base__nav_arrow_svg;
     rotate: 180deg;
