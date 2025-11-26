@@ -11,7 +11,13 @@ export default function WelcomePage(): JSX.Element {
         <section className={styles["welcome"]}>
             <WelcomeHeading randomMessage={message} />
             <Greeting />
-            <NavArrow direction="DOWN" url="/projects" message="PROJECTS" />
+            <NavArrow
+                direction="DOWN"
+                url="/projects"
+                message="PROJECTS"
+                flexJustify="flex-end"
+                flexAlign="center"
+            />
         </section>
     );
 }
