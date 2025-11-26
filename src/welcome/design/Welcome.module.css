@@ -1,0 +1,48 @@
+.base__horizontal_flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.base__vertical_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.welcome {
+    composes: base__vertical_flex;
+}
+
+.heading {
+    composes: base__vertical_flex;
+    align-items: flex-start;
+    flex: 25 1 25%;
+    margin-top: 1.5rem;
+}
+
+.heading__i_am {
+}
+
+.heading__status {
+}
+
+.greeting {
+    composes: base__vertical_flex;
+    flex: 60 0 60%;
+}
+
+.greeting__img {
+    background-color: orange;
+    max-width: 32rem;
+    max-height: 32rem;
+}
+
+.greeting__blurb {
+}
+
+.greeting__arrow {
+    flex: 15 0 15%;
+}
