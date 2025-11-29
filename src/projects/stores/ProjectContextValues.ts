@@ -3,6 +3,5 @@ import type Project from "../entities/Project.ts";
 
 export interface ProjectContextValues {
     allProjects: Project[] | null;
-    selectedProject: Project | null;
     status: ContextStatus;
 }

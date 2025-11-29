@@ -2,12 +2,15 @@ import type { JSX } from "react";
 import { useProjects } from "../stores/ProjectContext";
 import type { ContextStatus } from "../../shared/entities/ContextStatus";
 import "react-multi-carousel/lib/styles.css";
+import "../design/carousel.css";
 
 import styles from "../design/Projects.module.css";
 import ProjectCard from "./ProjectCard";
 import NavArrow from "../../shared/components/NavArrow";
 import Carousel from "react-multi-carousel";
+import ArrowSvg from "../../assets/right-arrow.svg?react";
 import "../../shared/design/base.css";
+import type React from "react";
 // export default function ProjectsPage(): JSX.Element {
 //     const { allProjects, status } = useProjects();
 //     return (
@@ -77,6 +80,7 @@ function Projects(): JSX.Element {
                 swipeable={true}
                 draggable={true}
                 infinite={true}
+                partialVisible={false}
             >
                 {projects?.map((project) => (
                     <ProjectCard key={project.id} project={project} />
@@ -91,22 +95,26 @@ function Projects(): JSX.Element {
             />
         </>
     );
+}
 
-    // return (
-    //     <>
-    //         <NavArrow
-    //             direction={"UP"}
-    //             flexJustify={"flex-start"}
-    //             flexAlign={"center"}
-    //             url={"/welcome"}
-    //             message={"WELCOME"}
-    //         />
-    //         <div className={styles["projects__list"]}>
-    //             {/* TODO: styles for card */}
-    //             <Carousel responsive={responsive}>
-    //                 {projects?.map((project) => (
-    //                     <ProjectCard key={project.id} project={project} />
-    //                 ))}
-    //             </Carousel>
-    //         </div>
+const CustomLeft = ({ onClick }: { onClick: never }) => (
+    <button>
+        <ArrowSvg className={null} />
+    </button>
+);
+
+function LeftArrow({ onClick }: { onClick: never }) {
+    return (
+        <button className="" onClick={onClick}>
+            <ArrowSvg className={null} />
+        </button>
+    );
+}
+
+function RightArrow({ onClick }: { onClick: never }) {
+    return (
+        <button className="" onClick={onClick}>
+            <ArrowSvg className={null} />
+        </button>
+    );
 }
