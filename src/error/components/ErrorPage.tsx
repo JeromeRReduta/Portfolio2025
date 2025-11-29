@@ -5,7 +5,7 @@ export default function ErrorPage() {
         <section className={styles["error"]}>
             <img
                 className={styles["error__reaction"]}
-                src="/src/assets/confused-bob.png"
+                src="/assets/confused-bob.png"
                 alt="oh now the image isn't working too"
             />
             <div className={styles["error__blurb"]}>

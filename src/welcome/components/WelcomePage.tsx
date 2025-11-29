@@ -3,6 +3,7 @@ import "../../shared/design/base.css";
 import styles from "../design/Welcome.module.css";
 import NavArrow from "../../shared/components/NavArrow.tsx";
 import useRandomMessage from "../stores/UseRandomMessage.tsx";
+import itsMeSrc from "../../assets/its-me.png";
 // import navArrowStyles from "../../shared/design/Nav-Arrow.module.css"; // TODO
 
 export default function WelcomePage(): JSX.Element {
@@ -40,7 +41,7 @@ function Greeting(): JSX.Element {
         <div className={styles["greeting"]}>
             <img
                 className={styles["greeting__img"]}
-                src="/src/assets/its-me.png"
+                src={itsMeSrc}
                 alt="hey that's me"
             />
             <div className={styles["greeting__blurb"]}>

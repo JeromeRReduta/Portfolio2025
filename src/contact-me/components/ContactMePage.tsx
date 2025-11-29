@@ -1,5 +1,5 @@
 import type { JSX } from "react";
-import EmailSvg from "../../../src/assets/email.svg?react";
+import EmailSvg from "../../assets/email.svg?react";
 import { Link } from "react-router";
 import NavArrow from "../../shared/components/NavArrow";
 import "../../shared/design/base.css";
