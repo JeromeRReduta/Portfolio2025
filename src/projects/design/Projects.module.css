@@ -1,0 +1,38 @@
+.base__horizontal_flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.base__vertical_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.projects {
+    composes: base__vertical_flex;
+}
+
+.projects > a {
+    flex: 10 1 10%;
+    width: 100%;
+}
+
+.projects__carousel {
+    width: 75vw;
+    height: 100%;
+}
+
+.projects__no_content_message {
+    /* TODO: maybe test this? */
+    margin: auto;
+}
+
+.projects__list {
+    composes: base__vertical_flex;
+    flex: 80 1 80%;
+    width: 100%;
+}

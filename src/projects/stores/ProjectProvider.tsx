@@ -42,10 +42,14 @@ export function ProjectProvider({
     const [selected, setSelected] = useState<Project | null>(null); // TODO: setSelected
     const [status, setStatus] = useState<ContextStatus>("INITIALIZED");
     const getProjects = useEffectEvent(() => {
-        setStatus("LOADING");
-        const mocks: Project[] = mockProjects();
-        setProjects(mocks);
-        setStatus("SUCCESS");
+        try {
+            setStatus("LOADING");
+            const mocks: Project[] = mockProjects();
+            setProjects(mocks);
+            setStatus("SUCCESS");
+        } catch (error) {
+            setStatus("ERROR");
+        }
     });
     useEffect(() => {
         getProjects();
