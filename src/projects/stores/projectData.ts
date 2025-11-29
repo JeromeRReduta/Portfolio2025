@@ -1,8 +1,13 @@
 import type Project from "../entities/Project.ts";
+import morScoreSrc from "../../assets/MorScoreCropped.png";
+import bookBuddySrc from "../../assets/BookBuddyCropped.png";
+import marketSrc from "../../assets/DbPicByFullstackCropped.png";
+import searchEngineSrc from "../../assets/SearchEngineMVCCropped.png";
+import portfolioSrc from "../../assets/its-me.png";
 
 const morScore: Project = {
     id: 0,
-    imageSrc: "/src/assets/MorScoreCropped.png",
+    imageSrc: morScoreSrc,
     title: "MorScore",
     description: `A capstone project done for Fullstack Academy. It attempts to solve "the greatest root problem plaguing
     the world today:" bad words. Input a text file and get a moral score
@@ -12,7 +17,7 @@ const morScore: Project = {
 
 const bookBuddy: Project = {
     id: 1,
-    imageSrc: "/src/assets/BookBuddyCropped.png",
+    imageSrc: bookBuddySrc,
     title: "Book Buddy",
     description: `A frontend book catalog site. Supports viewing books from a provided database, signing in, reserving books, and 
     returning books.`,
@@ -21,7 +26,7 @@ const bookBuddy: Project = {
 
 const market: Project = {
     id: 2,
-    imageSrc: "/src/assets/DbPicByFullstackCropped.png",
+    imageSrc: marketSrc,
     title: "Market",
     description: `Simulation of the backend of a shop website. Runs CRUD operations based on people logging in, registering, and adding
     a product to their cart.`,
@@ -30,7 +35,7 @@ const market: Project = {
 
 const searchEngineMVC: Project = {
     id: 3,
-    imageSrc: "/src/assets/SearchEngineMVCCropped.png",
+    imageSrc: searchEngineSrc,
     title: "Search Engine MVC",
     description: `A search engine built in Java.`,
     link: "https://github.com/JeromeRReduta/project-JeromeRRedutaMVC",
@@ -38,7 +43,7 @@ const searchEngineMVC: Project = {
 
 const portfolio2025: Project = {
     id: 4,
-    imageSrc: "/src/assets/its-me.png",
+    imageSrc: portfolioSrc,
     title: "Portfolio",
     description: "This site!",
     link: "./",
