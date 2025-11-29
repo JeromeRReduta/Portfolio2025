@@ -1,10 +1,9 @@
-// import "./shared/design/base.css"; // TODO
+import "./shared/design/base.css";
 import { Routes, Route } from "react-router";
 import BaseLayout from "./shared/components/BaseLayout.tsx";
 import WelcomePage from "./welcome/components/WelcomePage.tsx";
 import ProjectsPage from "./projects/components/ProjectsPage.tsx";
 import ContactMePage from "./contact-me/components/ContactMePage.tsx";
-// import ContactMePage from "./contact-me/components/ContactMePage.tsx";
 
 function App() {
     /**
@@ -16,6 +15,8 @@ function App() {
     return (
         <Routes>
             <Route path="/" element={<BaseLayout />}>
+                {" "}
+                {/*TODO: instead of index for everything, do 1 index*/}
                 <Route index element={<WelcomePage />} />
             </Route>
             <Route path="/welcome" element={<BaseLayout />}>

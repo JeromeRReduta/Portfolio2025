@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 import { Link } from "react-router";
-import "../../shared/design/base.css"; // TODO
+import "../../shared/design/base.css";
 import styles from "../design/Header.module.css";
 import GithubSVG from "../../assets/github-mark.svg?react";
 import LinkedInSVG from "../../assets/LinkedIn_icon.svg?react";
@@ -17,13 +17,13 @@ export default function Header(): JSX.Element {
 function LocalLinks(): JSX.Element {
     return (
         <nav className={styles["header__local"]}>
-            <Link className={styles["header__local_link"]} to="#">
+            <Link className={styles["header__local_link"]} to="/">
                 Welcome
             </Link>
-            <Link className={styles["header__local_link"]} to="#">
+            <Link className={styles["header__local_link"]} to="/projects">
                 Projects
             </Link>
-            <Link className={styles["header__local_link"]} to="#">
+            <Link className={styles["header__local_link"]} to="/contact-me">
                 Contact Me
             </Link>
         </nav>
