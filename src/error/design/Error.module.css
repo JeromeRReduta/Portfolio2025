@@ -1,0 +1,13 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.error__reaction {
+}
+
+.error__blurb {
+}

@@ -4,6 +4,7 @@ import BaseLayout from "./shared/components/BaseLayout.tsx";
 import WelcomePage from "./welcome/components/WelcomePage.tsx";
 import ProjectsPage from "./projects/components/ProjectsPage.tsx";
 import ContactMePage from "./contact-me/components/ContactMePage.tsx";
+import ErrorPage from "./error/components/ErrorPage.tsx";
 
 function App() {
     /**
@@ -15,23 +16,12 @@ function App() {
     return (
         <Routes>
             <Route path="/" element={<BaseLayout />}>
-                {" "}
-                {/*TODO: instead of index for everything, do 1 index*/}
                 <Route index element={<WelcomePage />} />
+                <Route path="welcome" element={<WelcomePage />} />
+                <Route path="projects" element={<ProjectsPage />} />
+                <Route path="contact-me" element={<ContactMePage />} />
+                <Route path="*" element={<ErrorPage />} />
             </Route>
-            <Route path="/welcome" element={<BaseLayout />}>
-                <Route index element={<WelcomePage />} />
-            </Route>
-            <Route path="/projects" element={<BaseLayout />}>
-                <Route index element={<ProjectsPage />} />
-            </Route>
-            <Route path="/contact-me" element={<BaseLayout />}>
-                <Route index element={<ContactMePage />} />
-            </Route>
-            {/* 
-      <Route path="*">
-        <Route index element={} />
-      </Route> */}
         </Routes>
     );
 }
