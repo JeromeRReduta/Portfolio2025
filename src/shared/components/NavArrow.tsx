@@ -4,7 +4,6 @@ import styles from "../design/NavArrow.module.css";
 import { Link } from "react-router";
 import ArrowSvg from "../../assets/right-arrow.svg?react";
 import type React from "react";
-
 type Direction = "UP" | "RIGHT" | "DOWN" | "LEFT";
 
 const map: Map<Direction, string> = new Map([

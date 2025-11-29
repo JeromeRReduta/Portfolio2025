@@ -1,3 +1,4 @@
+/// <reference types="vite-plugin-svgr/client" />
 import "./shared/design/base.css";
 import { Routes, Route } from "react-router";
 import BaseLayout from "./shared/components/BaseLayout.tsx";
