@@ -1,0 +1,38 @@
+.header {
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.base_navbar {
+    display: flex;
+    gap: 1.5rem;
+    align-content: center;
+}
+
+.header__local {
+    composes: base_navbar;
+    justify-content: flex-start;
+}
+
+.header__offsite {
+    composes: base_navbar;
+    justify-content: flex-end;
+}
+
+.header__local_link {
+    font-size: 1.5rem;
+}
+
+.github_svg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.linkedin_svg {
+    width: 3rem;
+    height: 3rem;
+}

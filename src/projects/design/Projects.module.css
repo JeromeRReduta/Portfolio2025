@@ -1,0 +1,65 @@
+.base__horizontal_flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.base__vertical_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.base__carousel_arrow {
+    overflow: visible;
+}
+
+.projects {
+    composes: base__vertical_flex;
+}
+
+.projects > a {
+    flex: 10 1 10%;
+}
+
+@media (width >= 1000px) {
+    .projects__carousel {
+        width: 75vw;
+    }
+}
+
+@media (width < 1000px) {
+    .projects__carousel {
+        width: 90vw;
+    }
+}
+
+.projects__carousel {
+    justify-self: center;
+}
+
+.projects__carousel > ul {
+    height: 100%;
+    width: 75vw;
+}
+
+.projects__arrow--left {
+    composes: base__carousel_arrow;
+    left: calc(4% + 1px);
+}
+
+.projects__arrow--right {
+    composes: base__carousel_arrow;
+    right: calc(4% + 1px);
+}
+
+.projects__carousel > ul > li {
+    height: 100%;
+}
+
+.projects__no_content_message {
+    /* TODO: maybe test this? */
+    margin: auto;
+}

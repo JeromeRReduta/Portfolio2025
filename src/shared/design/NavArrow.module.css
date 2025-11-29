@@ -1,0 +1,56 @@
+.base__horizontal_flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.base__vertical_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.base__nav_arrow_svg {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.nav_arrow {
+    composes: base__vertical_flex;
+    gap: 0rem;
+    color: var(--dark);
+    margin: 1.5rem;
+}
+
+.nav_arrow:hover {
+    color: var(--accent);
+}
+
+.nav_arrow > svg {
+    fill: currentColor;
+}
+
+.nav_arrow__message {
+    color: inherit;
+}
+
+.nav_arrow__svg_up {
+    composes: base__nav_arrow_svg;
+    rotate: -90deg;
+}
+
+.nav_arrow__svg_right {
+    composes: base__nav_arrow_svg;
+}
+
+.nav_arrow__svg_down {
+    composes: base__nav_arrow_svg;
+    rotate: 90deg;
+}
+
+.nav_arrow__svg_left {
+    composes: base__nav_arrow_svg;
+    rotate: 180deg;
+}

@@ -1,0 +1,22 @@
+.react-multiple-carousel__arrow {
+    transition: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.react-multiple-carousel__arrow:before {
+    content: url("../../assets/right-arrow.svg");
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.react-multiple-carousel__arrow:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.react-multiple-carousel__arrow--left {
+    rotate: 180deg;
+}
+
+.react-multiple-carousel__arrow--right {
+    rotate: 0deg;
+}
