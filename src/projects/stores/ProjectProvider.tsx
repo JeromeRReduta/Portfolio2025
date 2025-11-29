@@ -46,6 +46,7 @@ export function ProjectProvider({
             setStatus("LOADING");
             setProjects(projectData);
             setStatus("SUCCESS");
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
         } catch (error) {
             setStatus("ERROR");
         }

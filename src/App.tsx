@@ -24,7 +24,6 @@ function App() {
             </Route>
             <Route path="/projects" element={<BaseLayout />}>
                 <Route index element={<ProjectsPage />} />
-                {/* <Route path=":id" element={null} /> */}
             </Route>
             <Route path="/contact-me" element={<BaseLayout />}>
                 <Route index element={<ContactMePage />} />

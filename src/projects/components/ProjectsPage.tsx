@@ -3,25 +3,11 @@ import { useProjects } from "../stores/ProjectContext";
 import type { ContextStatus } from "../../shared/entities/ContextStatus";
 import "react-multi-carousel/lib/styles.css";
 import "../design/carousel.css";
-
 import styles from "../design/Projects.module.css";
 import ProjectCard from "./ProjectCard";
 import NavArrow from "../../shared/components/NavArrow";
 import Carousel from "react-multi-carousel";
-import ArrowSvg from "../../assets/right-arrow.svg?react";
 import "../../shared/design/base.css";
-import type React from "react";
-// export default function ProjectsPage(): JSX.Element {
-//     const { allProjects, status } = useProjects();
-//     return (
-//         <section id={styles.project}>
-//             <NavArrow direction="UP" url="/" message="WELCOME" />
-//             {status === "SUCCESS" && <ProjectCard project={allProjects![0]} />}
-//             {/* <InfiniteScroll></InfiniteScroll> */}
-//             <NavArrow direction="DOWN" url="/contact-me" message="CONTACT ME" />
-//         </section>
-//     );
-// }
 
 const statusToElement: Map<ContextStatus, JSX.Element> = new Map([
     ["LOADING", <LoadingMessage />],
@@ -47,8 +33,7 @@ function Error(): JSX.Element {
 }
 
 function Projects(): JSX.Element {
-    const { allProjects: projects, status } = useProjects();
-
+    const { allProjects: projects } = useProjects();
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
@@ -63,7 +48,6 @@ function Projects(): JSX.Element {
             items: 1,
         },
     };
-
     return (
         <>
             <NavArrow
@@ -73,7 +57,6 @@ function Projects(): JSX.Element {
                 url={"/welcome"}
                 message={"WELCOME"}
             />
-
             <Carousel
                 className={styles["projects__carousel"]}
                 responsive={responsive}
@@ -94,27 +77,5 @@ function Projects(): JSX.Element {
                 message={"CONTACT ME"}
             />
         </>
-    );
-}
-
-const CustomLeft = ({ onClick }: { onClick: never }) => (
-    <button>
-        <ArrowSvg className={null} />
-    </button>
-);
-
-function LeftArrow({ onClick }: { onClick: never }) {
-    return (
-        <button className="" onClick={onClick}>
-            <ArrowSvg className={null} />
-        </button>
-    );
-}
-
-function RightArrow({ onClick }: { onClick: never }) {
-    return (
-        <button className="" onClick={onClick}>
-            <ArrowSvg className={null} />
-        </button>
     );
 }
