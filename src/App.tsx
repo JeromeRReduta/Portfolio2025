@@ -2,8 +2,9 @@
 import { Routes, Route } from "react-router";
 import BaseLayout from "./shared/components/BaseLayout.tsx";
 import WelcomePage from "./welcome/components/WelcomePage.tsx";
+import ProjectsPage from "./projects/components/ProjectsPage.tsx";
+import ContactMePage from "./contact-me/components/ContactMePage.tsx";
 // import ContactMePage from "./contact-me/components/ContactMePage.tsx";
-// import ProjectsPage from "./projects/components/ProjectsPage.tsx";
 
 function App() {
     /**
@@ -17,18 +18,15 @@ function App() {
             <Route path="/" element={<BaseLayout />}>
                 <Route index element={<WelcomePage />} />
             </Route>
-            {/* <Route path="/projects" element={<BaseLayout />}>
+            <Route path="/projects" element={<BaseLayout />}>
                 <Route index element={<ProjectsPage />} />
-                <Route path=":id" element={null} />
+                {/* <Route path=":id" element={null} /> */}
             </Route>
 
             <Route path="/contact-me" element={<BaseLayout />}>
                 <Route index element={<ContactMePage />} />
-            </Route> */}
+            </Route>
             {/* 
-      <Route path="/contact-me">
-        <Route index element={} />
-      </Route>
       <Route path="*">
         <Route index element={} />
       </Route> */}

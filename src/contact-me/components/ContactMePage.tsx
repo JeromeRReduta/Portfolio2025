@@ -1,19 +1,26 @@
 import type { JSX } from "react";
-// import NavArrow from "../../shared/components/NavArrow";
 import EmailSvg from "../../../src/assets/email.svg?react";
 import { Link } from "react-router";
+import NavArrow from "../../shared/components/NavArrow";
 // import "../../shared/design/base.css"; // TODO
 // import "../design/contact-me.css";
 
 export default function ContactMePage(): JSX.Element {
     return (
         <section id="contact-me">
-            <NavArrow direction="UP" url="/projects" message="PROJECTS" />
+            <NavArrow
+                direction="UP"
+                url="/projects"
+                message="PROJECTS"
+                flexJustify={"flex-start"}
+                flexAlign={"center"}
+            />
             <ContactForm />
         </section>
     );
 }
 
+// TODO: Rewrite
 function ContactForm(): JSX.Element {
     return (
         // TODO: make it so that on hovering the LINK (not the contents), all contents turn to accent color

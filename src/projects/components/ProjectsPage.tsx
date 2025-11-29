@@ -5,6 +5,8 @@
 // import ProjectCard from "./ProjectCard.tsx";
 // import { useProjects } from "../stores/ProjectContext.tsx";
 
+import type { JSX } from "react";
+
 // export default function ProjectsPage(): JSX.Element {
 //     const { allProjects, status } = useProjects();
 //     return (
@@ -16,3 +18,11 @@
 //         </section>
 //     );
 // }
+
+export default function ProjectsPage(): JSX.Element {
+    return (
+        <section className={"a"}>
+            <div>PLACEHOLDER</div>
+        </section>
+    );
+}
